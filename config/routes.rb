@@ -9,6 +9,8 @@ Rails.application.routes.draw do
 
   resources :signups
 
+  root 'signups#new'
+
   # Defines the root path route ("/")
   # root "posts#index"
 end

@@ -34,7 +34,13 @@
     <p>Receive weekly insights from industry insiders.</p>
     
     
-
+    <%= form_for(@signup) do |f| %>
+      <div class="container"> 
+        <%= f.label :signup %><br> 
+        <%= f.text_field :email %> 
+        <%= f.submit "Sign Up" %> 
+      </div> 
+    <% end %>
   </div>
 </div>
 
